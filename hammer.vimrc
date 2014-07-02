@@ -57,6 +57,8 @@ vnoremap <C-_> <C-w><C-_>
 " shortcup for escape and cmd
 inoremap jj <ESC>
 nnoremap ; :
+nnoremap <TAB> %
+vnoremap <TAB> %
 
 
 " fold action for html
@@ -85,3 +87,6 @@ nnoremap <leader>u :GundoToggle<CR>
 
 " completions
 au FileType php set omnifunc=phpcomplete#CompletePHP
+
+" set guifont
+set guifont=Monaco:h12
