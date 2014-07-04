@@ -24,6 +24,7 @@ Plugin 'Townk/vim-autoclose.git'
 Plugin 'vim-scripts/matchit.zip.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'godlygeek/tabular'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.

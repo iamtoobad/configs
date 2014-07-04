@@ -59,7 +59,14 @@ inoremap jj <ESC>
 nnoremap ; :
 nnoremap <TAB> %
 vnoremap <TAB> %
+vnoremap > >gv
+vnoremap < <gv
+nnoremap > >>
+nnoremap < <<
 
+" same shortcut as commandT
+nmap <leader>t <C-p>
+vmap <leader>t <C-p>
 
 " fold action for html
 nnoremap <leader>f Vatzf
@@ -80,7 +87,7 @@ let g:user_emmet_expandabbr_key = '<leader>z'
 set noswapfile
 
 " auto reload vimrc when modified
-autocmd! bufwritepost ~/.vimrc source ~/.vimrc
+autocmd! bufwritepost ~/.vim/.vimrc source ~/.vimrc
 autocmd! bufwritepost ~/.vim/hammer.vimrc source ~/.vimrc
 
 nnoremap <leader>u :GundoToggle<CR>
