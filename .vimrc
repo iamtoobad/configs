@@ -25,6 +25,10 @@ Plugin 'vim-scripts/matchit.zip.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'godlygeek/tabular'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
