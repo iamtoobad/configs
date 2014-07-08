@@ -17,6 +17,6 @@ die() {
 git clone https://github.com/iamtoobad/configs.git $VIMHOME
 mkdir $VIMHOME/bundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-cp $VIMHOME/.vimrc ~
+ln -s $VIMHOME/.vimrc ~/.vimrc
 
 echo "hammer's vimrc is installed."
