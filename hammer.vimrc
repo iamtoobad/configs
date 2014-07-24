@@ -27,7 +27,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w\ [ENC=%{strlen(&fenc)?&fenc:'none'}]\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
 " set mapleader to ,
 let mapleader = ","
@@ -55,7 +55,7 @@ nnoremap <C-_> <C-w><C-_>
 vnoremap <C-_> <C-w><C-_>
 
 " shortcup for escape and cmd
-inoremap jj <ESC>
+inoremap jj <ESC><right>
 nnoremap ; :
 nnoremap <TAB> %
 vnoremap <TAB> %
@@ -97,3 +97,17 @@ au FileType php set omnifunc=phpcomplete#CompletePHP
 
 " set guifont
 set guifont=Monaco:h12
+
+" set tabular
+nmap <leader>a :Tabularize /
+vmap <leader>a :Tabularize /
+
+vnoremap <C-s> "zy:.,$s/<C-r>z//c<left><left>
+
+au BufRead,BufNewFile *.json setf json
+
+" for vim-markdown
+let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_initial_foldlevel=1
+let g:vim_markdown_no_default_key_mappings=1
+
